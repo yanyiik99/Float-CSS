@@ -1,0 +1,79 @@
+body {
+    background-image: url(img/serious.png);
+}
+
+h1 {
+    text-align:center;
+}
+
+.container {
+    width: 789px;
+    border: 1px solid black;
+    background-color:cornsilk;
+    padding: 10px;
+    font-size: 40px;
+    text-align: justify;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.container img {
+    float: right;
+}
+
+
+
+.box .one {
+    font-size: 80px;
+    width: 263px;
+    height: 200px;
+    background-color: crimson;
+    color: white;
+    text-align: center ;
+    line-height: 200px;
+    float: left;
+}
+
+.box .two {
+    width: 263px;
+    height: 200px;
+    background-color:rgb(144, 144, 0);
+    color: white;
+    text-align: center;
+    font-size: 80px;
+    line-height: 200px;
+    float: left;
+}
+
+.box .three {
+    width: 263px;
+    height: 200px;
+    background-color:rgb(8, 155, 140);
+    color: white;
+    text-align: center;
+    font-size: 80px;
+    line-height: 200px;
+    float: left;
+}
+
+
+/* Clear FLOAT agar element yang dikasi float akan di fixed */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
